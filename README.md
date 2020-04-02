@@ -3,6 +3,9 @@
 
 Stencyl currnetly lack some functionality with logic operators such as switch statements which is why I made this extension to help you devlope better games!
 
+## Example
+![Example](https://raw.githubusercontent.com/ess4654/Stencyl-Better-Logic/master/block-images/example-2.png "Example")
+
 ![Logic Header](https://raw.githubusercontent.com/ess4654/Stencyl-Better-Logic/master/block-images/header.png "Logic Header")
 
 ### Switch
