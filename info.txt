@@ -1,0 +1,6 @@
+name=Better Logic
+description=Adds better logic operators to the pallete such as the ternary operator and switch case statements
+author=Evan Svendsen
+website=https://twitter.com/TheJoblessCoder
+version=1.0
+compatibility=all

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<palette>
+	
+	<block tag="better-logic-switch" spec="Switch %0" code="BetterLogic.SetSwitch(~); {~}" type="wrapper" color="yellow" returns="void" help="Switch Logic Statement">
+		<fields>
+			<anything order="0"></anything>
+			<code-block order="1"></code-block>
+		</fields>
+	</block>
+
+	<block tag="better-logic-case" spec="Case %0" code="if (~ == BetterLogic.Switch &amp;&amp; BetterLogic.Switch != null &amp;&amp; !BetterLogic.FoundCase) {BetterLogic.FoundCase=true; ~}" type="wrapper" color="yellow" returns="void" help="Case For Switch Logic Statement">
+		<fields>
+			<anything order="0"></anything>
+			<code-block order="1"></code-block>
+		</fields>
+	</block>
+
+	<block tag="better-logic-default" spec="Default" code="if(!BetterLogic.FoundCase) {~}" type="wrapper" color="yellow" returns="void" help="Default For Switch Logic Statement">
+		<fields>
+			<code-block order="0"></code-block>
+		</fields>
+	</block>
+
+	<block tag="better-logic-break" spec="Break" code="BetterLogic.ClearSwitch();" type="action" color="yellow" returns="void" help="break; Switch Logic Statement">
+	</block>
+
+	<block tag="better-logic-ternary" spec="%0 ? %1 : %2" code="BetterLogic.Ternary(~,~,~)" type="normal" color="green" returns="anything" help="Returns the first element if true and the last element if false">
+		<fields>
+			<boolean order="0"></boolean>
+			<anything order="1"></anything>
+			<anything order="2"></anything>
+		</fields>
+	</block>
+
+</palette>
