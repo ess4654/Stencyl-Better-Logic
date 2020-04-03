@@ -45,13 +45,13 @@
 		</fields>
 	</block>
 
-	<block tag="better-logic-subtract-pre" spec="%0 --" code="(--~)" type="normal" color="green" returns="number" help="Subtract 1 from any number and returns the value">
+	<block tag="better-logic-subtract-pre" spec="-- %0" code="(--~)" type="normal" color="green" returns="number" help="Subtract 1 from any number and returns the value">
 		<fields>
 			<number order="0"></number>
 		</fields>
 	</block>
 
-	<block tag="better-logic-add-pre" spec="%0 ++" code="(++~)" type="normal" color="green" returns="number" help="Add 1 to any number and returns the value">
+	<block tag="better-logic-add-pre" spec="++ %0" code="(++~)" type="normal" color="green" returns="number" help="Add 1 to any number and returns the value">
 		<fields>
 			<number order="0"></number>
 		</fields>
