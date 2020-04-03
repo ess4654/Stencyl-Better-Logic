@@ -4,7 +4,7 @@
 Stencyl currnetly lack some functionality with logic operators such as switch statements which is why I made this extension to help you devlope better games!
 
 ## Example
-![Example](https://raw.githubusercontent.com/ess4654/Stencyl-Better-Logic/master/block-images/example-2.png "Example")
+![Example](https://raw.githubusercontent.com/ess4654/Stencyl-Better-Logic/master/block-images/example-3.png "Example")
 
 ![Logic Header](https://raw.githubusercontent.com/ess4654/Stencyl-Better-Logic/master/block-images/header.png "Logic Header")
 
@@ -23,17 +23,22 @@ If the value of case matches the valued passed into switch, the code within case
 
 Code within this block will be executed if none of the cases match the value of the switch.
 
-### Break
-![Break](https://raw.githubusercontent.com/ess4654/Stencyl-Better-Logic/master/block-images/break.png "Break")
+### Addition Blocks ++
+![Add](https://raw.githubusercontent.com/ess4654/Stencyl-Better-Logic/master/block-images/add.png "Add")
 
-Use between case blocks to prevent the check of further cases
+Adds 1 to a number. 
+
+### Subtraction Blocks ++
+![Subtract](https://raw.githubusercontent.com/ess4654/Stencyl-Better-Logic/master/block-images/sub.png "Subtract")
+
+Subtracts 1 from a number. 
 
 ### Ternary
 ![Ternary](https://raw.githubusercontent.com/ess4654/Stencyl-Better-Logic/master/block-images/ternary.png "Ternary Operator")
 
 Useful shortcut for setting values that is faster then an if else statement. If the boolean value is true, the first value is returned otherwise the last value will be returned.
 
-## Last Updated April 2, 2020 v1.0
+## Last Updated April 2, 2020 v1.1
 
 Additional Notes: 
 
