@@ -25,11 +25,35 @@
 	<block tag="better-logic-break" spec="Break" code="BetterLogic.ClearSwitch();" type="action" color="yellow" returns="void" help="break; Switch Logic Statement">
 	</block>
 
-	<block tag="better-logic-ternary" spec="%0 ? %1 : %2" code="BetterLogic.Ternary(~,~,~)" type="normal" color="green" returns="anything" help="Returns the first element if true and the last element if false">
+	<block tag="better-logic-ternary" spec="%0 ? %1 : %2" code="( ~ ? ~ : ~)" type="normal" color="green" returns="anything" help="Returns the first element if true and the last element if false">
 		<fields>
 			<boolean order="0"></boolean>
 			<anything order="1"></anything>
 			<anything order="2"></anything>
+		</fields>
+	</block>
+
+	<block tag="better-logic-add" spec="%0 ++" code="~ += 1;" type="action" color="green" returns="void" help="Add 1 to any number">
+		<fields>
+			<number order="0"></number>
+		</fields>
+	</block>
+
+	<block tag="better-logic-sub" spec="%0 --" code="~ -= 1;" type="action" color="green" returns="void" help="Subtract 1 from any number">
+		<fields>
+			<number order="0"></number>
+		</fields>
+	</block>
+
+	<block tag="better-logic-subtract" spec="%0 --" code="BetterLogic.SubReturn(~)" type="normal" color="green" returns="number" help="Subtract 1 from any number and returns the value" hidden="true">
+		<fields>
+			<number order="0"></number>
+		</fields>
+	</block>
+
+	<block tag="better-logic-subtract" spec="%0 ++" code="BetterLogic.AddReturn(~)" type="normal" color="green" returns="number" help="Add 1 to any number and returns the value" hidden="true">
+		<fields>
+			<number order="0"></number>
 		</fields>
 	</block>
 

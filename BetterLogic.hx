@@ -17,14 +17,18 @@ class BetterLogic {
 		Switch = null;
 	}
 
-	/***** Terary Operator *****/
-	public static function Ternary(_statement:Bool,_value1:Dynamic,_value2:Dynamic):Dynamic
+	/***** Subtract *****/
+	public static function SubReturn(_num:Int) : Int
 	{
-		if(_statement) {
-			return _value1;
-		} else {
-			return _value2;
-		}
+		_num = _num - 1;
+		return _num;
+	}
+
+	/***** Add *****/
+	public static function AddReturn(_num:Int) : Int
+	{
+		_num = _num + 1;
+		return _num;
 	}
 	
 }
