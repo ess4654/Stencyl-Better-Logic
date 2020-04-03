@@ -2,27 +2,27 @@
 
 <palette>
 	
-	<block tag="better-logic-switch" spec="Switch %0" code="BetterLogic.SetSwitch(~); {~}" type="wrapper" color="yellow" returns="void" help="Switch Logic Statement">
+	<block tag="better-logic-switch" spec="Switch %0" code="switch ~ {~}" type="wrapper" color="yellow" returns="void" help="Switch Logic Statement">
 		<fields>
 			<anything order="0"></anything>
 			<code-block order="1"></code-block>
 		</fields>
 	</block>
 
-	<block tag="better-logic-case" spec="Case %0" code="if (~ == BetterLogic.Switch &amp;&amp; BetterLogic.Switch != null &amp;&amp; !BetterLogic.FoundCase) {BetterLogic.FoundCase=true; ~}" type="wrapper" color="yellow" returns="void" help="Case For Switch Logic Statement">
+	<block tag="better-logic-case" spec="Case %0" code="case ~: ~" type="wrapper" color="yellow" returns="void" help="Case For Switch Logic Statement">
 		<fields>
 			<anything order="0"></anything>
 			<code-block order="1"></code-block>
 		</fields>
 	</block>
 
-	<block tag="better-logic-default" spec="Default" code="if(!BetterLogic.FoundCase) {~}" type="wrapper" color="yellow" returns="void" help="Default For Switch Logic Statement">
+	<block tag="better-logic-default" spec="Default" code="default: ~" type="wrapper" color="yellow" returns="void" help="Default For Switch Logic Statement">
 		<fields>
 			<code-block order="0"></code-block>
 		</fields>
 	</block>
 
-	<block tag="better-logic-break" spec="Break" code="BetterLogic.ClearSwitch();" type="action" color="yellow" returns="void" help="break; Switch Logic Statement">
+	<block tag="better-logic-break" spec="Break" code="BetterLogic.ClearSwitch();" type="action" color="yellow" returns="void" help="break; Switch Logic Statement" hidden="true">
 	</block>
 
 	<block tag="better-logic-ternary" spec="%0 ? %1 : %2" code="( ~ ? ~ : ~)" type="normal" color="green" returns="anything" help="Returns the first element if true and the last element if false">
@@ -45,13 +45,13 @@
 		</fields>
 	</block>
 
-	<block tag="better-logic-subtract" spec="%0 --" code="BetterLogic.SubReturn(~)" type="normal" color="green" returns="number" help="Subtract 1 from any number and returns the value" hidden="true">
+	<block tag="better-logic-subtract-pre" spec="%0 --" code="(--~)" type="normal" color="green" returns="number" help="Subtract 1 from any number and returns the value">
 		<fields>
 			<number order="0"></number>
 		</fields>
 	</block>
 
-	<block tag="better-logic-subtract" spec="%0 ++" code="BetterLogic.AddReturn(~)" type="normal" color="green" returns="number" help="Add 1 to any number and returns the value" hidden="true">
+	<block tag="better-logic-add-pre" spec="%0 ++" code="(++~)" type="normal" color="green" returns="number" help="Add 1 to any number and returns the value">
 		<fields>
 			<number order="0"></number>
 		</fields>
